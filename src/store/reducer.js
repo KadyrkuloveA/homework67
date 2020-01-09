@@ -22,8 +22,10 @@ const reducer = (state = initialState, action) => {
     if (action.type === 'CHECK_NUM') {
         if (state.secretNum !== password) {
             return {...state, secretNum: '', success: false}
+            alert("Wrong Password");
         } else if (state.secretNum === password) {
             return {...state, success: true}
+            alert("Access Granted");
         }
     }
 
