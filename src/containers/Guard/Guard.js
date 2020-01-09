@@ -5,9 +5,6 @@ import './Guard.css';
 class Guard extends Component {
     numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
     render() {
-        let success = {
-            background: 'white'
-        };
         return (
             <div className="card m-5">
                 <div className="card-header">
